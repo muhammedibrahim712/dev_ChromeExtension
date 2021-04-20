@@ -1,0 +1,37 @@
+{
+  "name": "hunter-scraper",
+  "version": "1.0.0",
+  "description": "hunter-scraper",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc -p tsconfig.json",
+    "watch": "npm run compile && webpack --config lib/webpack/webpack.dev.js --watch",
+    "build": "npm run compile && webpack --config lib/webpack/webpack.prod.js",
+    "clean": "rimraf dist && rimraf lib",
+    "style": "prettier --write \"src/**/*.{ts,tsx}\""
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.134",
+    "@types/copy-webpack-plugin": "^6.4.1",
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/webpack": "^5.28.0",
+    "copy-webpack-plugin": "^8.1.1",
+    "glob": "^7.1.6",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2 ",
+    "ts-loader": "^8.1.0",
+    "ts-node": "^9.1.1",
+    "typescript": "~4.2.4",
+    "webpack": "^5.32.0",
+    "webpack-cli": "~4.6.0",
+    "webpack-merge": "~5.7.3"
+  }
+}
